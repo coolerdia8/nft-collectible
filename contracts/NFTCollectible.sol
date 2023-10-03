@@ -71,7 +71,7 @@ contract NFTCollectible is ERC721Enumerable, Ownable {
         uint tokenCount = balanceOf(_owner);
         uint[] memory tokensId = new uint256[](tokenCount);
         for (uint i = 0; i < tokenCount; i++) {
-            tokensId[i] = tokenOfOwnerByIndex(_owner, i);//所有者がindex番目に所有するtokenIdを取得する関数..?
+            tokensId[i] = tokenOfOwnerByIndex(_owner, i);//所有者がindex番目に所有するtokenIdsを取得する関数
         }
 
         return tokensId;

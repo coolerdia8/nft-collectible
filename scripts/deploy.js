@@ -23,7 +23,7 @@ async function main() {
   await txn.wait();
   console.log("5 NFTs have been reserved");
 
-  // 0.03 ETH を送信して3つ NFT を mint する
+  // 0.02 ETH を送信して2つ NFT を mint する
   txn = await contract.mintNFTs(2, { value: hre.ethers.utils.parseEther("0.02"), });
   await txn.wait();
 
